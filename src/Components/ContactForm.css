@@ -1,0 +1,89 @@
+.cf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    border-color: gray;
+    align-self: center;
+    border-style:solid;    
+    border-radius: 8px;
+   
+}
+
+.col-cf-12{
+    display: flex;
+    justify-items: center;
+    border-style:solid;
+    border-color: black;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    width:600px;
+    }
+
+.col-cf-12 input{
+    display: flex;
+    justify-self:center;
+}
+
+.send-btn{
+    background-color: #6c757d;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin-left: 20px;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    touch-action: manipulation;  
+    width: 150px;
+    margin-bottom: 26px;
+    margin-top: 20px;
+
+  }
+  .send-btn a{
+      text-decoration: none;
+  }
+  .send-btn:hover,
+  .send-btn:focus {
+    background-color: #5c636a;
+  }
+  
+  .message-container {
+    min-height: 3em;
+    visibility: hidden; /* Initially hidden */
+  }
+  
+  .message-container.visible {
+    visibility: visible;
+  }
+
+  @media(max-width:600px){
+    .cf{
+        width: 350px;
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+
+       
+        border-style:solid;    
+        border-radius: 8px;
+    }
+    .col-cf-12{
+        width:300px;
+    } 
+  }

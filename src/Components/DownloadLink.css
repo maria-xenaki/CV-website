@@ -1,0 +1,11 @@
+.button{
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 40px;
+  vertical-align: baseline;
+  text-align: center;
+}
+.button a{
+  text-decoration: none;
+}

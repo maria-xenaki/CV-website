@@ -1,0 +1,151 @@
+.navbar{
+    display: flex;
+    box-shadow: 0 1px 3px 0;
+    justify-content:space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px;
+    z-index: 1000; 
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: -10px;
+    cursor: pointer;
+}
+.nav-logo :hover{
+    scale: (1.25);
+}
+.nav-menu a.active{
+    color: white;
+}
+.maria-xenaki{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f1eded;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: auto;
+    list-style: none;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 500;    
+    margin: 0px;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: -10px;
+}
+.nav-menu a{
+    color: #908e8e;
+    text-decoration: none;
+}
+.nav-menu li button{
+    background: black;
+    border:none;
+    color: #908e8e;
+}
+.nav-menu li button:hover{
+    background: black;
+    border-color: black;
+    transform: scale(1.25);
+    color: white;
+}
+.nav-menu li a:hover{
+    transform: scale(1.05);
+    color: #f1eded;
+}
+.nav-menu li a:active{
+    color:white;
+    transform: scale(1.05);
+}
+.btn-primary {
+    background-color: black; 
+    border: none;
+    color: gray;
+    transform: scale(1.20);
+}
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    transform: scale(1.30);
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: black;
+}
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: none;
+    --bs-dropdown-min-width: none;
+}
+a {
+    color: gray;
+}
+a:hover {
+    color: white;
+}
+/* -------- media query---------- */
+@media(max-width:5000px){
+    .dropdown{
+        display: none;
+    }
+}
+@media(max-width:600px){
+    .dropdown{
+        display: flex
+        
+    }
+    .about-me{
+        display: none;
+        margin: 20px;
+    }
+    .contact-me{
+        display: none;
+    }
+    .maria-xenaki{
+       margin-left: 10px;
+       align-items: flex-start;
+    }
+}
+@media(max-width:450px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+    }
+    .dropdown{
+        display: flexbox;
+        
+        
+    }
+    .about-me{
+        display: none;
+        margin: 20px;
+    }
+    
+    .maria-xenaki{
+        margin-left: 10px;
+        align-items: flex-start;
+    }
+    .nav-menu{
+        padding-left: 0px;
+        gap:2px
+    }
+    .nav-menu ul{
+        align-self: flex-end;
+    }
+
+}

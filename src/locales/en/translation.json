@@ -1,0 +1,65 @@
+{   
+    "About me":"About me",
+    "Contact me":"Contact me",
+
+    "Contact": "Contact me",
+
+    "Hello":"Hello,",
+    "welcome":"and welcome to my website!",
+    "I am":"I am",
+    "Maria":"Maria Xenaki",
+    "a":"a",
+    "front":"front-end developer", 
+    "working":"working on becoming full-stack.", 
+    "hear":"I will be happy to hear from you.",
+    "download":"You can download my CV ",
+    "learn":"and learn more about me ",
+    "here":"here",
+
+  
+    
+    "intro1": "Highly motivated junior front-end developer.",
+    "intro2":    "Avid learner with a growing proficiency in React JS and HTML/CSS, among others." ,
+    "intro3":     "Proven ability and extensive experience in problem solving, teamwork, and customer service, ",
+    "intro4":     " transitioning from a successful career in banking to pursue a passion for full-stack development.",
+    "intro5":       "You can download my CV and visit my (small-but-growing) GitHub.",
+
+    "Skills":"Skills",
+    "Soft Skills":"Soft Skills",
+    "Languages": "Languages",
+    "Education": "Education",
+    "Certifications":"Certifications/ Seminars",
+    "Other": "Other certifications",
+    "experience":"Work experience",
+    "NBG":"National Bank of Greece S.A.",
+
+    "English":"English",
+    "Greek":"Greek",
+    "French":"French",
+    "Spanish":"Spanish",    
+    "German":"German",
+   
+    "MSc Strategic Entrepreneurship":"MSc Strategic Entrepreneurship",
+    "Economics":"Economics",
+    "University of Southampton":"University of Southampton",
+    "University of Piraeus":"University of Piraeus",
+
+    " | Assistant Manager":" | Assistant Manager",
+    "Deposits Department":"Deposits Department",
+    "Parental Leave":"Parental Leave",
+    " | Head of Department":" | Head of Department",
+    "Postgraduate studies":"Postgraduate studies",
+    "task 1":"Expanded clientele/ Proposed optimal solutions based on client profile analysis",
+    "task 2":"Led team-building initiatives and solved complex problems/ Achieved significant cross-selling targets",
+    "task 3":"Restructured department and clientele",
+    "task 4":"Communicated effectively with prestigious clientele/ Delivered projects successfully within strict deadlines",
+    "task 5":"Maintained loyalty of high-net-worth clients during financial crisis in Greece.",
+    "task 6":"Provided personalized service to prestigious clientele/ Trained new employees.",
+    "task 7":"Undertook various tasks to gain in-depth customer service knowledge"
+    
+       
+     
+    }
+
+
+  
