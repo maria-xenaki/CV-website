@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+import { Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 function EmailLink() {
+  const { t } = useTranslation();
+
   const email = "mariaaxenaki@gmail.com";
 
   const [show, setShow] = useState(false);
@@ -24,8 +28,14 @@ function EmailLink() {
       </text>
 
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>Email address copied to clipboard!</Modal.Body>
+        <Modal.Header ></Modal.Header>
+        <Modal.Body>{t('Email address mariaaxenaki@gmail.com copied to clipboard!')}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        
+        </Modal.Footer>
       </Modal>
     </>
   );

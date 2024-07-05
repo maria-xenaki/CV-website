@@ -3,6 +3,11 @@
     "Contact me":"Contact me",
 
     "Contact": "Contact me",
+    "Message sent!":"Message sent!",
+    "Something went wrong, please try again later":"Something went wrong, please try again later",
+    "Send":"Send",
+    "Email address mariaaxenaki@gmail.com copied to clipboard!":"Email address mariaaxenaki@gmail.com copied to clipboard!",
+    "Telephone number +30 6943 075 382 copied to clipboard!":"Telephone number +30 6943 075 382 copied to clipboard!",
 
     "Hello":"Hello,",
     "welcome":"and welcome to my website!",
@@ -18,11 +23,17 @@
 
   
     
-    "intro1": "Highly motivated junior front-end developer.",
-    "intro2":    "Avid learner with a growing proficiency in React JS and HTML/CSS, among others." ,
-    "intro3":     "Proven ability and extensive experience in problem solving, teamwork, and customer service, ",
-    "intro4":     " transitioning from a successful career in banking to pursue a passion for full-stack development.",
-    "intro5":       "You can download my CV and visit my (small-but-growing) GitHub.",
+    "intro1": "Highly motivated",
+    "intro2": "Avid learner " ,
+    "intro2a": "with a growing proficiency in" ,
+    "intro2b": "React, HTML/CSS and Javascript,",
+    "intro2c": " among others",
+    "intro3": "Proven ability and extensive experience in",
+    "intro3a": "problem solving, teamwork, and customer service, ",
+    "intro4": " transitioning from a successful career in banking to pursue a passion for ",
+    "intro4a": " full-stack ",
+    "intro5": "You can download my CV ",
+    "intro5a": "and visit my (small-but-growing) GitHub.",
 
     "Skills":"Skills",
     "Soft Skills":"Soft Skills",
@@ -31,16 +42,35 @@
     "Certifications":"Certifications/ Seminars",
     "Other": "Other certifications",
     "experience":"Work experience",
-    "NBG":"National Bank of Greece S.A.",
-
+    "NBG":"National Bank of Greece S.A.",    
+    
+    "Intermediate":"Intermediate",
+    "Beginner":"Beginner",
+    
+    "problem solving":"problem solving",
+    "working under pressure":"working under pressure",
+    "teamwork":"teamwork",
+    "creativity":"creativity",
+    "communication":"communication",
+    
     "English":"English",
     "Greek":"Greek",
     "French":"French",
     "Spanish":"Spanish",    
     "German":"German",
+    
+    "Fluent":"Fluent",
+    "Native":"Native",
+    "Intermediate ":"Intermediate",
+    "Basic":"Basic",
+    "Good":"Good",
    
+    "Α1, Α2, Β1, Β Professional Certifications on Investment Services":"Α1, Α2, Β1, Β Professional Certifications on Investment Services",
+    "Bank of Greece":"Bank of Greece",
+    "Professional Certification on Insurance Services":"Professional Certification on Insurance Services",
+     
     "MSc Strategic Entrepreneurship":"MSc Strategic Entrepreneurship",
-    "Economics":"Economics",
+    "Economics":"BSc Economics",
     "University of Southampton":"University of Southampton",
     "University of Piraeus":"University of Piraeus",
 

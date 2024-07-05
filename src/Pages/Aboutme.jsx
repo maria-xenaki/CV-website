@@ -15,21 +15,21 @@ const Aboutme = () => {
   
   const skillRows = skills.map((skill=>
     <tr className='r3'>
-    <td>{skill.skill}</td>
-    <td>{skill.level}</td>
+    <td>{t(skill.skill)}</td>
+    <td>{t(skill.level)}</td>
     <td>{skill.proficiency}</td>
     </tr>
   ));
 
   const softSkillRows = softSkills.map((softSkill=>
     <tr>
-    <td>{softSkill.sskill}</td>
+    <td>{t(softSkill.sskill)}</td>
     </tr>
   ));
   const languageRows = languages.map((language =>
     <tr>
     <td>{t(language.language)}</td>
-    <td>{language.level}</td>
+    <td>{t(language.level)}</td>
     <td>{language.proficiency}</td>
   </tr>
   ));
@@ -44,8 +44,8 @@ const certificationRows = filteredCertifications.map((certification =>
 
 const lastCertifications = certifications.slice(-2).map((certification=>
   <tr>
-    <td>{certification.title}</td>
-    <td>{certification.institution}</td>
+    <td>{t(certification.title)}</td>
+    <td>{t(certification.institution)}</td>
   </tr>));
 
  const uniRows = unis.map((uni => 
@@ -69,18 +69,15 @@ const workRows = works.map((work =>
     <div className='main-am'>
         <div className='col m flex' id='about-me'>
           <div className='about-me-text'>
-            <p>{t('intro1')}</p>
-            
-
-        
-          <p>Highly motivated <b>junior front-end developer.</b><br/>
-          <b>Avid learner </b> with a growing proficiency in <b>React JS and HTML/CSS,</b> among others. <br/>
-          Proven ability and extensive experience in <b>problem solving, teamwork, and customer service</b>, 
-          transitioning from a successful career in banking to pursue a passion for <b>full-stack</b> development.</p>
+     
+          <p>{t('intro1')} <b> junior front-end developer.</b><br/>
+          <b>{t('intro2')} </b> {t('intro2a')} <b>{t('intro2b')}</b> {t('intro2c')} <br/>
+          {t('intro3')} <b>{t('intro3a')}</b>
+          {t('intro4')}<b>{t('intro4a')}</b> development.</p>
 
               <p>
                 <br/>
-                    You can download my CV <DownloadLink/> and visit my (small-but-growing) GitHub <a className='gh-link'target="_blank" href="https://github.com/maria-xenaki" style={{color:'inherit'}}><FaGithub className='gh-icon' style={{cursor:'pointer'}}/></a>.
+                {t('intro5')} <DownloadLink/> {t('intro5a')} <a className='gh-link'target="_blank" rel="noreferrer" href="https://github.com/maria-xenaki" style={{color:'inherit'}}><FaGithub className='gh-icon' style={{cursor:'pointer'}}/></a>
               </p>
           </div>
         <div className='image'>
@@ -90,7 +87,7 @@ const workRows = works.map((work =>
       <div className='col3'>
         <div className="col m d-3">
           <div className='title'>{t('Skills')}</div><br />
-          <Table  className='tables'>    
+          <Table hover className='tables'>    
           <tbody>
             {skillRows}
           </tbody>
@@ -98,7 +95,7 @@ const workRows = works.map((work =>
         </div>
         <div className="col m d-3">
           <div className='title'>{t('Soft Skills')}</div><br />
-          <Table  className='tables'style={{textAlign:'center'}}>    
+          <Table hover className='tables'style={{textAlign:'center'}}>    
           <tbody>
             {softSkillRows}
           </tbody>
@@ -116,7 +113,7 @@ const workRows = works.map((work =>
       </div>
         <div className="col m">
           <div className='title'>{t('Education')}</div><br />
-            <Table >
+            <Table hover>
               <tbody>
               {uniRows}
               </tbody>
@@ -130,7 +127,7 @@ const workRows = works.map((work =>
             </tbody>
           </Table><br />
           <p className='title-sm'>{t('Other')}:</p><br />
-          <Table >
+          <Table hover>
             <tbody>
               {lastCertifications}
             </tbody>

@@ -8,14 +8,17 @@ import { FaLinkedin } from 'react-icons/fa'
 import EmailLink from '../EmailLink';
 import TelLink from '../TelLink';
 import { Button} from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+
 
 const Contactme = () => {
+  const { t } = useTranslation();
 
   return (
     <div className='main-contact'>
       
        
-        <p className='title-cm'><b>Contact me:</b></p>
+        <p className='title-cm'><b>{t('Contact')}:</b></p>
         <div className='contact-div'>
       <ul className='etc'>
         <ul style={{marginLeft:'0px'}}>

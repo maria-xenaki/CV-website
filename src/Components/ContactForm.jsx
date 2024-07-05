@@ -1,8 +1,13 @@
 import React,{ useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactForm.css';
+import { useTranslation } from 'react-i18next';
+
 
 const ContactForm = () => {
+
+    const { t } = useTranslation();
+
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [stateMessage, setStateMessage] = useState(null);
     const sendEmail = (e) => {
@@ -19,15 +24,15 @@ const ContactForm = () => {
         .then(
           (result) => {
             console.log('Email successfully sent!', result.text);
-            setStateMessage('Message sent!');
+            setStateMessage(t('Message sent!'));
             setIsSubmitting(false);
             setTimeout(() => {
               setStateMessage(null);
             }, 5000); // hide message after 5 seconds
           },
           (error) => {
-            console.error('Failed to send email:', error);
-            setStateMessage('Something went wrong, please try again later');
+            console.error(t('Failed to send email:'), error);
+            setStateMessage(t('Something went wrong, please try again later'));
             setIsSubmitting(false);
             setTimeout(() => {
               setStateMessage(null);
@@ -49,7 +54,7 @@ const ContactForm = () => {
         <div>
           <textarea className='col-cf-12' placeholder='Message'name="message" />
         </div>
-        <button className='send-btn' type="submit" value="Send" disabled={isSubmitting}>Send</button>
+        <button className='send-btn' type="submit" value="Send" disabled={isSubmitting}>{t('Send')}</button>
         <div className={`message-container ${stateMessage ? 'visible' : ''}`}>
         {stateMessage}
       </div>

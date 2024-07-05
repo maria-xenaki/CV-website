@@ -34,6 +34,11 @@ export const skills= [
         skill: 'Express- Node.js',  
         level:'Beginner', 
         proficiency: '1/5' 
+      },
+      {
+        skill: 'Java',  
+        level:'Beginner', 
+        proficiency: '1/5' 
       }
     ]
 export const softSkills= [
@@ -84,13 +89,13 @@ export const languages= [
     },
     {
       language: 'French',
-      level:'Intermediate',
+      level:'Good',
       proficiency:'3/5',
       
     },
     {
       language: 'Spanish',
-      level:'Basic',
+      level:'Intermediate ',
       proficiency:'2/5',
       
     },
@@ -131,12 +136,12 @@ export const certifications= [
         icon:<FaLink/>
       },
 
-      {
-        link: 'https://olympus.mygreatlearning.com/courses/12385',
-        title:'Java Programming' ,
-        institution: 'Great Learning',
-        icon: <FaLink/>
-      },
+      // {
+      //   link: 'https://olympus.mygreatlearning.com/courses/12385',
+      //   title:'Java Programming' ,
+      //   institution: 'Great Learning',
+      //   icon: <FaLink/>
+      // },
 
       {
         link: '',

@@ -72,8 +72,12 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     min-height: 100vh;
-  }
-   .gh-link:hover .gh-icon{
+}
+.gh-icon{
+    transform: scale(1.30);
+    margin-bottom: 5px;
+}
+.gh-link:hover .gh-icon{
     transform: scale(1.5);
 } 
 

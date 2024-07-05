@@ -1,10 +1,12 @@
-import React, {useState} from 'react'
-import './Navbar.css'
-import logo from '../Assets/mx.png'
-import { Link } from 'react-router-dom'
-import DayNightToggler from '../DayNightToggler'
-import { DropdownButton, Dropdown} from 'react-bootstrap'
+import React, {useState} from 'react';
+import './Navbar.css';
+import logo from '../Assets/mx.png';
+import { Link } from 'react-router-dom';
+import DayNightToggler from '../DayNightToggler';
+import { Dropdown } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import { CiGlobe } from "react-icons/ci";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [isNight, setIsNight] = useState(false);
@@ -34,18 +36,30 @@ const Navbar = () => {
             <li><Link to='/about_me'className='about-me'>{t('About me')}</Link></li>
             <li><Link to='/contact_me' className='contact-me'>{t('Contact me')} </Link></li>
             
-
-            <li>
-              <DropdownButton data-bs-theme="dark">
-                <Dropdown.Item><Link to= '/' style={{textDecoration:'none'}} >Homepage</Link></Dropdown.Item>
-                <Dropdown.Item><Link to= '/about_me' style={{textDecoration:'none'}}>About me</Link></Dropdown.Item>
-                <Dropdown.Item><Link to= '/contact_me' style={{textDecoration:'none'}}>Contact me</Link></Dropdown.Item>
-              </DropdownButton> 
-            </li>
             <li><DayNightToggler onToggle={toggleTheme} isNight={isNight}/></li>
+            <li>
+              <Dropdown className='lang' data-bs-theme="dark" >
+                  <Dropdown.Toggle variant="success" id="dropdown-basic" className='lang2'><CiGlobe/></Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item onClick={() => changeLanguage('en')}>en</Dropdown.Item>
+                      <Dropdown.Item onClick={() => changeLanguage('gr')}>gr</Dropdown.Item>
+                    </Dropdown.Menu>
+              </Dropdown>
+            </li>
+            <li>
+              <Dropdown data-bs-theme="dark" >
+                  <Dropdown.Toggle variant="success" id="dropdown-basic" className='lang2'><GiHamburgerMenu/></Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item><Link to= '/' style={{textDecoration:'none'}} >Homepage</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to= '/about_me' style={{textDecoration:'none'}}>About me</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to= '/contact_me' style={{textDecoration:'none'}}>Contact me</Link></Dropdown.Item>
+                  
+                  </Dropdown.Menu>
+              </Dropdown>
+            </li>
         </ul>
-        <button onClick={() => changeLanguage('en')}>English</button>
-        <button onClick={() => changeLanguage('gr')}>Greek</button>
+        
+       
     </div>
         
 

@@ -10,15 +10,22 @@
     padding: 16px;
     z-index: 1000; 
 }
+.lang2::after{
+    display: none;
+    
+}
+.lang2 {
+    transform: scale(1.20);
+}
 .nav-logo{
     display: flex;
     align-items: center;
     gap: -10px;
     cursor: pointer;
 }
-.nav-logo :hover{
+/* .nav-logo :hover{
     scale: (1.25);
-}
+} */
 .nav-menu a.active{
     color: white;
 }
@@ -101,6 +108,9 @@ a:hover {
 @media(max-width:5000px){
     .dropdown{
         display: none;
+    }
+    .lang{
+        display: inline;
     }
 }
 @media(max-width:600px){

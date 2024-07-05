@@ -5,7 +5,7 @@ import { MdOutlineWbSunny } from "react-icons/md";
 const DayNightToggler = ({ onToggle, isNight }) => {
   return (
     <button onClick={onToggle} variant={isNight ? "dark" : "light"}>
-      {isNight ? <MdOutlineWbSunny className='sun'/> : <FaRegMoon className='moon'/>}
+      {isNight ? <MdOutlineWbSunny /> : <FaRegMoon />}
     </button>
   );
 };
