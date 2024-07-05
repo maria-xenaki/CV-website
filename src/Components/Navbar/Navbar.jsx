@@ -50,9 +50,9 @@ const Navbar = () => {
               <Dropdown data-bs-theme="dark" >
                   <Dropdown.Toggle variant="success" id="dropdown-basic" className='lang2'><GiHamburgerMenu/></Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item><Link to= '/' style={{textDecoration:'none'}} >Homepage</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to= '/about_me' style={{textDecoration:'none'}}>About me</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to= '/contact_me' style={{textDecoration:'none'}}>Contact me</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to= '/' style={{textDecoration:'none'}} >{t('Homepage')}</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to= '/about_me' style={{textDecoration:'none'}}>{t('About me')}</Link></Dropdown.Item>
+                    <Dropdown.Item><Link to= '/contact_me' style={{textDecoration:'none'}}>{t('Contact me')}</Link></Dropdown.Item>
                   
                   </Dropdown.Menu>
               </Dropdown>

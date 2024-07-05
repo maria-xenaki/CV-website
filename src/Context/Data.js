@@ -141,7 +141,7 @@ export const certifications= [
       //   title:'Java Programming' ,
       //   institution: 'Great Learning',
       //   icon: <FaLink/>
-      // },
+      // }
 
       {
         link: '',

@@ -30,10 +30,9 @@
     border-style:solid;
     border-color: gray;
     padding: 10px;
-    padding-left: 20px;
     margin: 20px;
     border-radius: 10px;
-    /* align-items: center; */
+   
 }
 .d-3{
     width: 320px;
