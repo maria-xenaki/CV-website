@@ -18,14 +18,14 @@ const Homepage = () => {
         <div className='main'>
         <div className='text'>
    
-          <p><i><b> {t("Hello")}</b> <Typewriter text= {t("welcome")} delay={100} /></i><br /> 
+          <p><i><b>{t("Hello")}</b> <Typewriter text= {t("welcome")} delay={100} /></i><br /> 
       
      
           {t("I am")} <b>{t("Maria")}</b>, {t("a")} <b>front-end developer</b>, <br className='brh'/> {t("working")} <br/>
 
           <i>{t("hear")} </i></p>
 
-      <div className='column_direction'>{t('download')} <DownloadLink/> <br className='brh'/> <br className='brh'/>{t('learn')} <Link to='/about_me' style={{color:"white"}}><Button variant='secondary' className='button'> {t('here')}  </Button> </Link>.</div>
+      <div className='column_direction'>{t('download')} <DownloadLink/> <br className='brh'/> <br className='brh'/>{t('learn')} <Link to='/about_me' style={{color:"white"}}><Button variant='secondary' className='button'> {t('here')} </Button> </Link></div>
       
       
     

@@ -1,5 +1,5 @@
 import { FaLink } from "react-icons/fa";
-
+import { FaRegFile } from "react-icons/fa";
 
 
 export const skills= [
@@ -7,56 +7,63 @@ export const skills= [
     {
       skill: 'React JS',
       level:'Intermediate',   
-      proficiency: '3/5'
+      percentage:'60'
     },
     {
         skill: 'HTML/CSS', 
         level:'Intermediate', 
-        proficiency: '3/5'  
+        percentage:'60' 
       },
       {
         skill: 'Javascript', 
         level:'Beginner', 
-        proficiency: '1/5'  
+        percentage:'20'
       },
       {
         skill: 'Angular JS', 
         level:'Beginner', 
-        proficiency: '1/5'  
+        percentage:'20' 
       },
     {
         skill: 'Python', 
         level:'Beginner', 
-        proficiency: '1/5'  
+        percentage:'20'
       },
     
       {
         skill: 'Express- Node.js',  
         level:'Beginner', 
-        proficiency: '1/5' 
+        proficiency: '1/5',
+        percentage:'20'
       },
       {
         skill: 'Java',  
         level:'Beginner', 
-        proficiency: '1/5' 
+        proficiency: '1/5',
+        percentage:'20'
       }
     ]
 export const softSkills= [
 
   {
     sskill: 'problem solving',   
+    emoji: "\u{2699}", 
   },
   {
       sskill: 'working under pressure',   
+      emoji: "\u{1F525}", 
     },
     {
       sskill: 'teamwork',   
+      emoji:  "\u{1F91D}",
     },
     {
-      sskill: 'creativity',   
+      sskill: 'creativity',  
+      emoji:  "\u{1F4A1}" 
     },
     {
-      sskill: 'communication',   
+      sskill: 'communication',  
+      emoji:  "\u{1F5E3}"  
     }
 ]
 export const unis= [
@@ -78,31 +85,31 @@ export const languages= [
   {
     language: 'English',
     level:'Fluent',
-    proficiency:'5/5',
+    percentage: '100',
     
   },
   {
       language: 'Greek',
       level: 'Native',
-      proficiency:'5/5',
+      percentage: '100',
       
     },
     {
       language: 'French',
       level:'Good',
-      proficiency:'3/5',
+      percentage: '60',
       
     },
     {
       language: 'Spanish',
       level:'Intermediate ',
-      proficiency:'2/5',
+      percentage: '40',
       
     },
     {
       language: 'German',
       level:'Basic',
-      proficiency:'1/5',
+      percentage: '20',
       
     },
 ]
@@ -113,14 +120,19 @@ export const certifications= [
       link: 'https://www.startproject.gr/school-of-code/',
       title:'START School of Code: Front End Developer Bootcamp' ,
       institution: 'Social Innov',
-      icon: <FaLink/>
-      // https://www.eventora.com/el/Ticket/PrintOrderTemplatePdf?templateType=3&orderId=ASEUQOJBWT&useBackGround=1
+      icon: <FaLink/>,
+      file:<FaRegFile/>,
+      cert:'/ssoc_xenaki.pdf'
+      //'https://www.eventora.com/el/Ticket/PrintOrderTemplatePdf?templateType=3&orderId=ASEUQOJBWT&useBackGround=1'
     },
     {
         link: 'https://colmooc.gunet.gr/info/?course=COLMOOC118',
         title:'Python Programming for non-Programmers',
         institution: 'colMOOC- AUTh',
-        icon:<FaLink/>
+        icon:<FaLink/>,
+        file:<FaRegFile/>,
+        cert:'/colmooc_xenaki.pdf'
+        //cert:'https://www.eventora.com/el/Ticket/PrintOrderTemplatePdf?templateType=3&orderId=ASEUQOJBWT&useBackGround=1'
       },
       {
         link: 'https://www.freecodecamp.org/learn/scientific-computing-with-python/',
@@ -133,7 +145,9 @@ export const certifications= [
         link: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
         title:'Responsive Web Design',
         institution: 'freeCodeCamp',
-        icon:<FaLink/>
+        icon:<FaLink/>,
+        file:<FaRegFile/>,
+        cert:'freeCodeCamp_Responsive_web_design_xenaki.pdf'
       },
 
       // {
@@ -175,13 +189,13 @@ export const works= [
       branch:'Ano Ilisia branch',
       tasks:'task 2'
     },
-    {
-      dates: '11/2020 - 04/2022',
-      department:'Parental Leave',
-      title:'',
-      employer: '',
-      branch:''
-    },
+    // {
+    //   dates: '11/2020 - 04/2022',
+    //   department:'Parental Leave',
+    //   title:'',
+    //   employer: '',
+    //   branch:''
+    // },
     {
       dates: '07/2018 - 10/2020',
       department:'Business Banking',

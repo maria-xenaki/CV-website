@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { skills, softSkills, languages, unis, certifications, works } from '../Context/Data';
 import { FaGithub } from "react-icons/fa";
 import { useTranslation } from 'react-i18next';
+import ProgressBar from 'react-bootstrap/ProgressBar';
+
 
 const Aboutme = () => {
 
@@ -15,23 +17,22 @@ const Aboutme = () => {
   
   const skillRows = skills.map((skill=>
     <tr className='r3'>
-    <td>{t(skill.skill)}</td>
-    <td>{t(skill.level)}</td>
-    <td>{skill.proficiency}</td>
+      <td width="30%">{t(skill.skill)}</td>
+      <td width="70">{t(skill.level)}<ProgressBar variant='danger'now={skill.percentage} /></td>
     </tr>
   ));
 
   const softSkillRows = softSkills.map((softSkill=>
     <tr>
     <td>{t(softSkill.sskill)}</td>
+    <td>{softSkill.emoji}</td>
     </tr>
   ));
   const languageRows = languages.map((language =>
     <tr>
-    <td>{t(language.language)}</td>
-    <td>{t(language.level)}</td>
-    <td>{language.proficiency}</td>
-  </tr>
+      <td width="30">{t(language.language)}</td>
+      <td width="70%">{t(language.level)}<ProgressBar variant='danger'now={language.percentage} /></td>
+    </tr>
   ));
 const filteredCertifications = certifications.slice(0,-2);
   
@@ -40,6 +41,7 @@ const certificationRows = filteredCertifications.map((certification =>
     <td>{certification.title}</td>
     <td>{certification.institution}</td>
     <td><Link to={certification.link} target="_blank" >{certification.icon}</Link></td>
+    <td><a href={certification.cert} download>{certification.file}</a></td>
   </tr>));
 
 const lastCertifications = certifications.slice(-2).map((certification=>
