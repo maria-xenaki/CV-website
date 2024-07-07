@@ -42,6 +42,7 @@ const Navbar = () => {
                   <Dropdown.Toggle variant="success" id="dropdown-basic" className='lang2'><CiGlobe/></Dropdown.Toggle>
                     <Dropdown.Menu>
                       <Dropdown.Item onClick={() => changeLanguage('en')}>en</Dropdown.Item>
+                      <Dropdown.Divider />
                       <Dropdown.Item onClick={() => changeLanguage('gr')}>gr</Dropdown.Item>
                     </Dropdown.Menu>
               </Dropdown>
@@ -51,7 +52,9 @@ const Navbar = () => {
                   <Dropdown.Toggle variant="success" id="dropdown-basic" className='lang2'><GiHamburgerMenu/></Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item><Link to= '/' style={{textDecoration:'none'}} >{t('Homepage')}</Link></Dropdown.Item>
+                    <Dropdown.Divider />
                     <Dropdown.Item><Link to= '/about_me' style={{textDecoration:'none'}}>{t('About me')}</Link></Dropdown.Item>
+                    <Dropdown.Divider />
                     <Dropdown.Item><Link to= '/contact_me' style={{textDecoration:'none'}}>{t('Contact me')}</Link></Dropdown.Item>
                   
                   </Dropdown.Menu>

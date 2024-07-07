@@ -1,6 +1,6 @@
 .main{
     margin-top: 100px;
-    min-height: 58vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
 }
