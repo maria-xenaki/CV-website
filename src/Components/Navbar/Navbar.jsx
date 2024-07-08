@@ -56,13 +56,11 @@ const Navbar = () => {
                     <Dropdown.Item><Link to= '/about_me' style={{textDecoration:'none'}}>{t('About me')}</Link></Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item><Link to= '/contact_me' style={{textDecoration:'none'}}>{t('Contact me')}</Link></Dropdown.Item>
-                  
                   </Dropdown.Menu>
               </Dropdown>
             </li>
         </ul>
-        
-       
+            
     </div>
         
 

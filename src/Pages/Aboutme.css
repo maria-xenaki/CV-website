@@ -80,6 +80,7 @@
     transform: scale(1.5);
 } 
 
+
 /* -------- media query-------------- */
 @media(max-width:480px){
 
@@ -98,5 +99,8 @@
         margin-left: 0px;
         margin-right: 0px;
         align-items: center;
+    }
+    .w10{
+        display: none;
     }
 }

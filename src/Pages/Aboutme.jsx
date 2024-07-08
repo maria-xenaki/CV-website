@@ -23,9 +23,11 @@ const Aboutme = () => {
   ));
 
   const softSkillRows = softSkills.map((softSkill=>
-    <tr>
-    <td>{t(softSkill.sskill)}</td>
-    <td>{softSkill.emoji}</td>
+    <tr className='sskills'>
+      <td width="10%" className='w10'></td>
+      <td>{softSkill.emoji}</td>
+      <td>{t(softSkill.sskill)}</td>
+      <td width="10%" className='w10'></td>
     </tr>
   ));
   const languageRows = languages.map((language =>
@@ -97,7 +99,7 @@ const workRows = works.map((work =>
         </div>
         <div className="col m d-3">
           <div className='title'>{t('Soft Skills')}</div><br />
-          <Table hover className='tables'style={{textAlign:'center'}}>    
+          <Table hover className='tables ' >    
           <tbody>
             {softSkillRows}
           </tbody>

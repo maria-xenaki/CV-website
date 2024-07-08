@@ -7,8 +7,6 @@ import './Homepage.css'
 import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
-  
-
 const Homepage = () => {
   const { t } = useTranslation();
 
