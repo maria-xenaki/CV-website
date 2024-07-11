@@ -46,15 +46,15 @@ const ContactForm = () => {
     return (
       <form onSubmit={sendEmail} className='cf'>
         <div className='cf-div'>
-          <input className='col-cf-12'style={{marginTop:'40px'}} placeholder='Name'type="text" name="user_name" />
+          <input className='col-cf-12'style={{marginTop:'40px'}} placeholder='Name'type="text" name="user_name" required/>
         </div>
         <div>
-          <input className='col-cf-12' placeholder='Email'type="email" name="user_email" />
+          <input className='col-cf-12' placeholder='Email'type="email" name="user_email" required/>
         </div>
         <div>
-          <textarea className='col-cf-12' placeholder='Message'name="message" />
+          <textarea className='col-cf-12' placeholder='Message'name="message" required/>
         </div>
-        <button className='send-btn' type="submit" value="Send" disabled={isSubmitting}>{t('Send')}</button>
+        <button className='send-btn' type="submit" value="Send" disabled={isSubmitting} >{t('Send')}</button>
         <div className={`message-container ${stateMessage ? 'visible' : ''}`}>
         {stateMessage}
       </div>

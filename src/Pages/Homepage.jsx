@@ -1,5 +1,4 @@
 import React from 'react'
-import WelcomeModal from '../Components/Welcome';
 import Typewriter from '../Components/typewriter';
 import DownloadLink from '../Components/DownloadLink';
 import { Link } from 'react-router-dom';
@@ -12,7 +11,6 @@ const Homepage = () => {
 
   return (
     <div>
-      <WelcomeModal/>
         <div className='main'>
         <div className='text'>
    

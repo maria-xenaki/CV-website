@@ -28,20 +28,20 @@
     "intro2": "Avid learner " ,
     "intro2a": "with a growing proficiency in" ,
     "intro2b": "React, HTML/CSS and Javascript,",
-    "intro2c": " among others.",
-    "intro3": "Proven ability and extensive experience in",
+    "intro2c": " among others. ",
+    "intro3": "Proven ability and extensive experience in ",
     "intro3a": "problem solving, teamwork, and customer service, ",
     "intro4": " transitioning from a successful career in banking to pursue a passion for ",
     "intro4a": " full-stack ",
     "intro5": "You can download my CV ",
-    "intro5a": "and visit my (small-but-growing) GitHub",
+    "intro5a": "and visit my (small-but-growing) GitHub ",
 
     "Skills":"Skills",
     "Soft Skills":"Soft Skills",
     "Languages": "Languages",
     "Education": "Education",
     "Certifications":"Certifications/ Seminars",
-    "Other": "Other certifications",
+    "Other": "Other Certifications",
     "experience":"Work experience",
     "NBG":"National Bank of Greece S.A.",    
     
@@ -77,18 +77,15 @@
 
     " | Assistant Manager":" | Assistant Manager",
     "Deposits Department":"Deposits Department",
-    "Parental Leave":"Parental Leave",
     " | Head of Department":" | Head of Department",
     "Postgraduate studies":"Postgraduate studies",
-    "task 1":"Expanded clientele/ Proposed optimal solutions based on client profile analysis",
-    "task 2":"Led team-building initiatives and solved complex problems/ Achieved significant cross-selling targets",
-    "task 3":"Restructured department and clientele",
-    "task 4":"Communicated effectively with prestigious clientele/ Delivered projects successfully within strict deadlines",
+    "task 1":"Expanded clientele/ Proposed optimal solutions based on client profile analysis.",
+    "task 2":"Led team-building initiatives and achieved significant cross-selling targets.",
+    "task 3":"Optimized department processes and expanded clientele.",
+    "task 4":"Provided complex services to well established SMEs / Delivered projects successfully within strict deadlines.",
     "task 5":"Maintained loyalty of high-net-worth clients during financial crisis in Greece.",
-    "task 6":"Provided personalized service to prestigious clientele/ Trained new employees.",
-    "task 7":"Undertook various tasks to gain in-depth customer service knowledge"
-    
-       
+    "task 6":"Undertook various tasks to gain in-depth customer service knowledge/ Trained new employees."
+     
      
     }
 

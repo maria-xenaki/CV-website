@@ -73,13 +73,13 @@
     color: white;
 }
 .nav-menu li a:hover{
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     color: #f1eded;
 }
-.nav-menu li a:active{
+/* .nav-menu li a:active{
     color:white;
     transform: scale(1.05);
-}
+} */
 .btn-primary {
     background-color: black; 
     border: none;
@@ -104,6 +104,10 @@ a {
 a:hover {
     color: white;
 }
+
+/* .dropdown.item a:hover{
+    color:white;
+} */
 /* -------- media query---------- */
 @media(max-width:5000px){
     .dropdown{

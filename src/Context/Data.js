@@ -63,7 +63,7 @@ export const softSkills= [
     },
     {
       sskill: 'communication',  
-      emoji:  "\u{1F5E3}"  
+      emoji:  "\u{1F4AC}"  
     }
 ]
 export const unis= [
@@ -189,13 +189,6 @@ export const works= [
       branch:'Ano Ilisia branch',
       tasks:'task 2'
     },
-    // {
-    //   dates: '11/2020 - 04/2022',
-    //   department:'Parental Leave',
-    //   title:'',
-    //   employer: '',
-    //   branch:''
-    // },
     {
       dates: '07/2018 - 10/2020',
       department:'Business Banking',
@@ -220,27 +213,20 @@ export const works= [
       branch:'Angelopoulou branch',
       tasks:'task 5'
     },
+    
+    // {
+    //   dates: '10/2007 - 09/2008',
+    //   department:'Postgraduate studies',
+    //   title:'',
+    //   employer: '',
+    //   branch:''
+    // },
     {
-      dates: '10/2008 - 07/2010',
-      department:'Deposits Department',
-      title:'',
-      employer: 'National Bank of Greece S.A.',
-      branch:'Angelopoulou branch',
-      tasks:'task 6'
-    },
-    {
-      dates: '10/2007 - 09/2008',
-      department:'Postgraduate studies',
-      title:'',
-      employer: '',
-      branch:''
-    },
-    {
-      dates: '11/2002 - 09/2007',
+      dates: '11/2002 - 07/2010',
       department:'Deposits Department',
       title:'',
       employer: 'National Bank of Greece S.A.',
       branch:'Victoria Sq. branch',
-      tasks:'task 7'
+      tasks:'task 6'
     }
      ]

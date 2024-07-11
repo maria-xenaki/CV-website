@@ -74,13 +74,15 @@ const workRows = works.map((work =>
         <div className='col m flex' id='about-me'>
           <div className='about-me-text'>
      
-          <p>{t('intro1')} <b> junior front-end developer.</b><br/>
-          <b>{t('intro2')} </b> {t('intro2a')} <b>{t('intro2b')}</b> {t('intro2c')} <br/>
+          <p>{t('intro1')} <b> junior front-end developer. </b>
+          {/* <br/> */}
+          {t('intro2')} {t('intro2a')} <b>{t('intro2b')}</b> {t('intro2c')} 
+          {/* <br/> */}
           {t('intro3')} <b>{t('intro3a')}</b>
           {t('intro4')}<b>{t('intro4a')}</b> development.</p>
 
               <p>
-                <br/>
+                {/* <br/> */}
                 {t('intro5')} <DownloadLink/> {t('intro5a')} <a className='gh-link'target="_blank" rel="noreferrer" href="https://github.com/maria-xenaki" style={{color:'inherit'}}><FaGithub className='gh-icon' style={{cursor:'pointer'}}/></a>
               </p>
           </div>
