@@ -17,7 +17,11 @@ const Homepage = () => {
           <p><i><b>{t("Hello")}</b> <Typewriter text= {t("welcome")} delay={100} /></i><br /> 
       
      
-          {t("I am")} <b>{t("Maria")}</b>, {t("a")} <b>front-end developer</b>, <br className='brh'/> {t("working")} <br/>
+          {t("I am")} <b>{t("Maria")}</b>, {t("a")} <b>web developer</b>. 
+          
+          {/* <br className='brh'/> {t("working")}  */}
+          
+          <br/>
 
           <i>{t("hear")} </i></p>
 

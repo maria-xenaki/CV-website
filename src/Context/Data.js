@@ -6,39 +6,39 @@ export const skills= [
 
     {
       skill: 'React JS',
-      level:'Intermediate',   
+       
       percentage:'60'
     },
     {
         skill: 'HTML/CSS', 
-        level:'Intermediate', 
+         
         percentage:'60' 
+      },
+      ,
+      {
+        skill: 'Java',  
+        
+        proficiency: '1/5',
+        percentage:'20'
       },
       {
         skill: 'Javascript', 
-        level:'Beginner', 
+        
         percentage:'20'
       },
       {
         skill: 'Angular JS', 
-        level:'Beginner', 
+        
         percentage:'20' 
       },
     {
         skill: 'Python', 
-        level:'Beginner', 
         percentage:'20'
       },
     
       {
         skill: 'Express- Node.js',  
-        level:'Beginner', 
-        proficiency: '1/5',
-        percentage:'20'
-      },
-      {
-        skill: 'Java',  
-        level:'Beginner', 
+         
         proficiency: '1/5',
         percentage:'20'
       }

@@ -74,7 +74,7 @@ const workRows = works.map((work =>
         <div className='col m flex' id='about-me'>
           <div className='about-me-text'>
      
-          <p>{t('intro1')} <b> junior front-end developer. </b>
+          <p>{t('intro1')} <b> junior web developer. </b>
           {/* <br/> */}
           {t('intro2')} {t('intro2a')} <b>{t('intro2b')}</b> {t('intro2c')} 
           {/* <br/> */}
