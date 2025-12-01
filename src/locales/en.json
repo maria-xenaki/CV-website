@@ -10,31 +10,33 @@
     "Email address mariaaxenaki@gmail.com copied to clipboard!":"Email address mariaaxenaki@gmail.com copied to clipboard!",
     "Telephone number +30 6943 075 382 copied to clipboard!":"Telephone number +30 6943 075 382 copied to clipboard!",
 
-    "Hello":"Hello,",
-    "welcome":"and welcome to my website!",
+    
+    "welcome":"Welcome to my website!",
     "I am":"I am",
     "Maria":"Maria Xenaki",
-    "a":"and I am a",
+    "a":", a",
     "front":"web developer", 
-    "working":"working on becoming full-stack.", 
-    "hear":"I will be happy to hear from you.",
-    "download":"You can download my CV ",
-    "learn":"and learn more about me ",
-    "here":"here",
+    "I create": "I create",
+    "static and dynamic websites, tailored to your goals and personal style, ": "static and dynamic websites, tailored to your goals and personal style, ",
+    "built on powerful CMS Platforms":"built on powerful CMS Platforms",     
+    "hear":"If what you are looking for aligns with my expertise, I would love to <1>hear from you!</1>",
+    "download":"You can <1>download my CV </1>",
+    "learn":"and <2>learn more about me. </2>",
 
   
     
     "intro1": "Highly motivated",
     "intro2": "Avid learner " ,
     "intro2a": "with a growing proficiency in" ,
-    "intro2b": "React and Java, ",
+    "intro2b": "React and Java (Spring Boot), ",
     "intro2c": " among others. ",
     "intro3": "Proven ability and extensive experience in ",
     "intro3a": "problem solving, teamwork, and customer service, ",
-    "intro4": " transitioning from a successful career in banking to pursue a passion for ",
-    "intro4a": " full-stack ",
-    "intro5": "You can download my CV ",
-    "intro5a": "and visit my (small-but-growing) GitHub ",
+    "intro4": " transitioning from a successful career in Banking to pursue my passion for ",
+    
+    "and": " and",
+    "visit": " visit",
+    "intro5a": " my (small-but-growing) GitHub ",
 
     "Skills":"Skills",
     "Soft Skills":"Soft Skills",
@@ -84,10 +86,19 @@
     "task 3":"Optimized department processes and expanded clientele.",
     "task 4":"Provided complex services to well established SMEs / Delivered projects successfully within strict deadlines.",
     "task 5":"Maintained loyalty of high-net-worth clients during financial crisis in Greece.",
-    "task 6":"Undertook various tasks to gain in-depth customer service knowledge/ Trained new employees."
+    "task 6":"Undertook various tasks to gain in-depth customer service knowledge/ Trained new employees.",
+
+    "gogreener_description1": "Custom-made, dynamic website with eco-friendly content.",
+
+    "gogreener_description2": "Visitors have access to the content of the website. Logged-in users can post eco-friendly content, which appears upon admin approval.",
+
+    "madreamboutique_description1": "High-quality e-shop for clothing and accessories.",
+    
+    "madreamboutique_description2": "Built on Shopify's powerful CMS platform, optimized for SEO and seamless user experience."
      
      
     }
+
 
 
   

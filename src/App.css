@@ -20,3 +20,37 @@
   .modal-body{
     color: black;
   }
+
+  .text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.links {
+    color: #908e8e;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.links:hover {
+    color: black;
+}
+
+body.night-mode .links {
+  color: #ccc;
+}
+
+body.night-mode .links:hover {
+  color: white; 
+}
+
+
+body.night-mode h3 a.text-dark {
+  color: white !important;
+}
+
+body.night-mode h3 a.text-dark:hover {
+  color: white !important;
+}

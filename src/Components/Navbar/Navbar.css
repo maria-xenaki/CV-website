@@ -1,165 +1,86 @@
-.navbar{
-    display: flex;
-    box-shadow: 0 1px 3px 0;
-    justify-content:space-around;
-    align-items: center;
+.mobile-toggler-wrapper {
+    padding: 8px 16px;
+    background: black;
+}
+
+.bg-bl {
     background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 16px;
-    z-index: 1000; 
-}
-.lang2::after{
-    display: none;
-    
-}
-.lang2 {
-    transform: scale(1.20);
-}
-.nav-logo{
-    display: flex;
-    align-items: center;
-    gap: -10px;
-    cursor: pointer;
-}
-/* .nav-logo :hover{
-    scale: (1.25);
-} */
-.nav-menu a.active{
-    color: white;
-}
-.maria-xenaki{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #f1eded;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0px;
 }
 
-.nav-menu{
-    display: flex;
-    align-items: center;
-    justify-content: auto;
-    list-style: none;
-    gap: 40px;
-    font-size: 16px;
-    font-weight: 500;    
-    margin: 0px;
+.lang-current {
+  color: gray;
+  font-weight: 500;
+  padding: 4px 8px;
 }
 
-.nav-menu li{
+.lang-current:hover {
+  opacity: 0.8;
+  color: white;
+}
+.lang-selector {
+  position: relative;
+  cursor: pointer;
+}
+
+.lang-menu {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background: black;
+  border: none;
+  padding: 6px 0;
+  min-width: 60px;
+  z-index: 2000;
+  display: block;
+}
+
+.lang-menu div {
+  padding: 6px 12px;
+  color: white;
+}
+
+.lang-menu div:hover {
+  background: #111;
+}
+
+.settings-right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+/* Make toggler look like nav menu items */
+.nav-item button {
+    background: black !important;
+    border: none !important;
+    color: #908e8e !important;       /* gray icon */
+    padding: 6px 10px;
+    border-radius: 6px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: -10px;
-}
-.nav-menu a{
-    color: #908e8e;
-    text-decoration: none;
-}
-.nav-menu li button{
-    background: black;
-    border:none;
-    color: #908e8e;
-}
-.nav-menu li button:hover{
-    background: black;
-    border-color: black;
-    transform: scale(1.25);
-    color: white;
-}
-.nav-menu li a:hover{
-    /* transform: scale(1.05); */
-    color: #f1eded;
-}
-/* .nav-menu li a:active{
-    color:white;
-    transform: scale(1.05);
-} */
-.btn-primary {
-    background-color: black; 
-    border: none;
-    color: gray;
-    transform: scale(1.20);
-}
-.btn-primary:hover {
-    color: white;
-    background-color: black;
-    transform: scale(1.30);
-}
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    background-color: black;
-}
-.dropdown-menu {
-    --bs-dropdown-link-active-bg: none;
-    --bs-dropdown-min-width: none;
-}
-a {
-    color: gray;
-}
-a:hover {
-    color: white;
 }
 
-/* .dropdown.item a:hover{
-    color:white;
-} */
-/* -------- media query---------- */
-@media(max-width:5000px){
-    .dropdown{
-        display: none;
-    }
-    .lang{
-        display: inline;
-    }
+/* Icon color */
+.nav-item button svg {
+    fill: #908e8e !important;
+    font-size: 20px;
+    transition: 0.2s ease;
 }
-@media(max-width:600px){
-    .dropdown{
-        display: flex
-        
-    }
-    .about-me{
-        display: none;
-        margin: 20px;
-    }
-    .contact-me{
-        display: none;
-    }
-    .maria-xenaki{
-       margin-left: 10px;
-       align-items: flex-start;
-    }
-}
-@media(max-width:450px){
-    .navbar{
-        display: flex;
-        flex-direction: row;
-        padding-right: 10px;
-    }
-    .dropdown{
-        display: flexbox;
-        
-        
-    }
-    .about-me{
-        display: none;
-        margin: 20px;
-    }
-    
-    .maria-xenaki{
-        margin-left: 10px;
-        align-items: flex-start;
-    }
-    .nav-menu{
-        padding-left: 0px;
-        gap:2px
-    }
-    .nav-menu ul{
-        align-self: flex-end;
-    }
 
+/* Hover → white */
+.nav-item button:hover svg {
+    fill: white !important;
 }
+
+/* Click active state */
+.nav-item button:active svg {
+    fill: white !important;
+}
+
+.shadow {
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+

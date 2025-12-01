@@ -1,12 +1,12 @@
-import React from 'react'
-import './Aboutme.css'
-import pic from '../Components/Assets/maria_xenaki_pic1.jpg'
-import DownloadLink from '../Components/DownloadLink'
-import Table from 'react-bootstrap/Table'
+import React from 'react';
+import './Aboutme.css';
+import '../App';
+import pic from '../Components/Assets/maria_xenaki_pic1.jpg';
+import Table from 'react-bootstrap/Table';
 import { Link } from 'react-router-dom';
 import { skills, softSkills, languages, unis, certifications, works } from '../Context/Data';
 import { FaGithub } from "react-icons/fa";
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 
@@ -42,8 +42,8 @@ const certificationRows = filteredCertifications.map((certification =>
   <tr>
     <td>{certification.title}</td>
     <td>{certification.institution}</td>
-    <td><Link to={certification.link} target="_blank" >{certification.icon}</Link></td>
-    <td><a href={certification.cert} download>{certification.file}</a></td>
+    <td><Link to={certification.link} target="_blank" className='links'>{certification.icon}</Link></td>
+    <td><a href={certification.cert} className='links' download>{certification.file}</a></td>
   </tr>));
 
 const lastCertifications = certifications.slice(-2).map((certification=>
@@ -55,8 +55,8 @@ const lastCertifications = certifications.slice(-2).map((certification=>
  const uniRows = unis.map((uni => 
   <tr>
     <td>{uni.dates}</td>
-    <td>{t(uni.title)}</td>
-    <td>{t(uni.university)}</td>
+    <td>{t(uni.title)} <br/> {t(uni.university)}</td>
+    {/* <td>{t(uni.university)}</td> */}
   </tr>
 ));  
 
@@ -75,15 +75,28 @@ const workRows = works.map((work =>
           <div className='about-me-text'>
      
           <p>{t('intro1')} <b> junior web developer. </b>
-          {/* <br/> */}
+          <br/>
           {t('intro2')} {t('intro2a')} <b>{t('intro2b')}</b> {t('intro2c')} 
-          {/* <br/> */}
+          <br/>
           {t('intro3')} <b>{t('intro3a')}</b>
-          {t('intro4')}<b>{t('intro4a')}</b> development.</p>
+          {t('intro4')}<b> full-stack</b> development.</p>
 
               <p>
-                {/* <br/> */}
-                {t('intro5')} <DownloadLink/> {t('intro5a')} <a className='gh-link'target="_blank" rel="noreferrer" href="https://github.com/maria-xenaki" style={{color:'inherit'}}><FaGithub className='gh-icon' style={{cursor:'pointer'}}/></a>
+                <br/>
+                <Trans
+                          i18nKey="download"
+                          components={{
+                            1: <a href='/Maria_Xenaki_CV.pdf' className='links'  target="_blank" rel="noreferrer"/>
+                          }}
+                        />
+                {t('and')}
+                <a className='links' target="_blank" rel="noreferrer"  href="https://github.com/maria-xenaki"><>{t('visit')}</>
+                </a>
+                
+                
+                {t('intro5a')} 
+                <a className='gh-link'target="_blank" rel="noreferrer"  href="https://github.com/maria-xenaki" style={{color:'inherit'}}><FaGithub className='gh-icon' style={{cursor:'pointer'}}/>
+                </a>
               </p>
           </div>
         <div className='image'>
@@ -117,14 +130,7 @@ const workRows = works.map((work =>
           </Table>
         </div>
       </div>
-        <div className="col m">
-          <div className='title'>{t('Education')}</div><br />
-            <Table hover>
-              <tbody>
-              {uniRows}
-              </tbody>
-            </Table>
-        </div>
+        
         <div className="col m">
           <div className='title'>{t('Certifications')}</div><br />
           <Table hover >
@@ -139,6 +145,17 @@ const workRows = works.map((work =>
             </tbody>
           </Table>
         </div>
+
+<div className="col m d-4">
+          <div className='title'>{t('Education')}</div><br />
+            <Table hover>
+              <tbody>
+              {uniRows}
+              </tbody>
+            </Table>
+        </div>
+
+
       <div className='col m'>
         <div className='title'>{t('experience')}</div><br />
         <p className='title-sm' style={{textAlign:'left'}}>{t('NBG')}</p>

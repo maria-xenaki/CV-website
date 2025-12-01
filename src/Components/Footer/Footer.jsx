@@ -11,16 +11,20 @@ import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const { t } = useTranslation();
+  
+   const currentYear = new Date().getFullYear();
 
   return (
-    <div className='footer'>
+    <div className='footer mt-auto'>
       <div className='footer-contents'>
         <p className='contact'>{t('Contact')}:</p><br />
         <ul className='footer-links'>
           <ul className='email-ul'><TfiEmail/> <EmailLink/> </ul>
           <ul><BsTelephone/> <TelLink/></ul>
-          <ul><Link to="https://www.linkedin.com/in/maria-xenaki-front-end" target="_blank">Linked<FaLinkedin/></Link></ul>
+          <ul><Link to="https://www.linkedin.com/in/mxenaki" target="_blank">Linked<FaLinkedin/></Link></ul>
         </ul>
+        <p className='contact'><h7>Copyright © {currentYear}, MariaXenaki. All rights reserved.</h7></p>
+        
       </div>
     </div>
   )

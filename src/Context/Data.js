@@ -16,7 +16,7 @@ export const skills= [
       },
       ,
       {
-        skill: 'Java',  
+        skill: 'Java (Spring Boot)',  
         
         proficiency: '1/5',
         percentage:'20'
@@ -115,6 +115,15 @@ export const languages= [
 ]
 
 export const certifications= [
+
+  {
+      link: 'https://codingfactory.aueb.gr/el/coding-factory-series#cfprogram',
+      title:'Coding Factory: Software Engineering Education' ,
+      institution: 'Athens University of Economics and Business',
+      icon: <FaLink/>,
+      file:<FaRegFile/>,
+      cert:'/coding_factory_xenaki.pdf'
+    },
 
     {
       link: 'https://www.startproject.gr/school-of-code/',
@@ -230,3 +239,25 @@ export const works= [
       tasks:'task 6'
     }
      ]
+
+    export const projects = [
+  {
+    id: 1,
+    name: "GoGreener",
+    icon: "/gogreener.png",
+    link: "https://www.gogreener.gr",
+    description1: "gogreener_description1",
+    description2: "gogreener_description2"
+    
+    
+  },
+  {
+    id: 2,
+    name: "MaDream Boutique",
+    icon: "/madreamboutique.png",
+    link: "https://www.madreamboutique.gr",
+    description1: "madreamboutique_description1",
+    description2: "madreamboutique_description2"
+  }
+];
+

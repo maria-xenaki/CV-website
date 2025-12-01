@@ -1,0 +1,25 @@
+.project-img {
+  width:100%;
+  max-width: 350px;  /* fixed width */
+  height: auto;      /* preserve aspect ratio */
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  /* padding:5px;
+  border: 2px solid gray; */
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+}
+
+.projects-page {
+  margin-top: 100px;       /* spacing from navbar */
+  padding: 0 20px;         /* prevent touching the edges */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projects-page .title-cm {
+  margin-bottom: 30px;     /* bring projects closer to title */
+}

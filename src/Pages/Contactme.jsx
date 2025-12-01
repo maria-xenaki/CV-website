@@ -18,14 +18,14 @@ const Contactme = () => {
     <div className='main-contact'>
       
        
-        <p className='title-cm'><b>{t('Contact')}:</b></p>
+        <h4 className='title-cm'><b>{t('Contact')}</b></h4>
         <div className='contact-div'>
       <ul className='etc'>
         <ul style={{marginLeft:'0px'}}>
           <Button variant='secondary'><TfiEmail/> <EmailLink/></Button>
         </ul>
         <ul><Button variant='secondary'><BsTelephone/> <TelLink/></Button></ul>
-        <ul><Button variant='secondary'><Link to="https://www.linkedin.com/in/maria-xenaki-front-end" target="_blank"><text style={{color:'white', fontSize:'15px'}}>Linked</text><FaLinkedin /></Link></Button></ul>
+        <ul><Button variant='secondary'><Link to="https://www.linkedin.com/in/mxenaki" target="_blank"><text style={{color:'white', fontSize:'15px'}}>Linked</text><FaLinkedin /></Link></Button></ul>
         </ul>
      
         </div>

@@ -10,6 +10,7 @@
     margin-top: 100px;
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .about-me-text p{
@@ -19,6 +20,8 @@
 .about-me-text{
     align-self: center;
     text-align:justify;
+    max-width: 700px;
+    line-height: 40px;
 }
 
 .image{
@@ -28,6 +31,13 @@
     border-color: gray;
     padding: 10px;
     border-radius: 10px;
+}
+
+.image img {
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
 }
 .col{
     border-style:solid;
@@ -42,12 +52,23 @@
     align-self:auto;
 }
 
+.d-4{
+    width: 500px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    align-self: center;
+}
+
 .m{
     border-radius: 10px;
 }
 
 .flex {
     display: flex;
+    align-items: center;
+    gap: 40px;
 }
 .col li ul{
     list-style-type: none;
@@ -82,6 +103,17 @@
 .gh-link:hover .gh-icon{
     transform: scale(1.5);
 } 
+.col table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0 8px; /* adds spacing between rows */
+}
+
+.col table tbody tr {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 
 
 /* -------- media query-------------- */
@@ -95,15 +127,53 @@
     }
 
     .col3{
-        flex-direction: column;
+        /* flex-direction: column; */
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
-    .main-am{
-        margin-left: 0px;
-        margin-right: 0px;
+    
+    .flex {
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+
+    .main-am{
+        margin: 50px 0;
+        align-items: center;
+        padding: 0 15px;
     }
     .w10{
         display: none;
     }
+}
+@media(max-width:820px){
+
+  
+    .image{
+        display: none;
+    }
+}
+
+@media (max-width:1306px) {
+    .col3 {
+        flex-direction: column;   
+        align-items: center;      
+        justify-content: center;
+        gap: 20px;                
+    }
+
+    .d-3 {
+        width: 100%;              
+        max-width: 500px;   
+    }
+
+        .col3 .col {
+        margin: 20px auto;      
+        width: 100%;
+        max-width: 500px;       
+}
 }
